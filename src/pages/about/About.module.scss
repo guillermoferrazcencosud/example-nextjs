@@ -1,0 +1,6 @@
+@import '@/styles/theme.scss';
+.root{
+    width: map-get($rootPages, width);
+    height: map-get($rootPages, height);
+    overflow-y: map-get($rootPages, overflowY);
+}

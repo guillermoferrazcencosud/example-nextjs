@@ -1,0 +1,9 @@
+@import '@/styles/theme.scss';
+.root {
+    background-color: $red-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 7vh;
+}

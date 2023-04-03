@@ -1,0 +1,123 @@
+@import '@/styles/theme';
+
+.root {
+  background-color: $gray-primary;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+  font-size: .70rem;
+  font-family: 'OpenSans', sans-serif;
+  padding: 5px;
+  position: relative;
+  margin: 0;
+  &:hover {
+    background-color: $header-hover;
+    cursor: pointer;
+  }
+}
+
+.default {
+  text-decoration: none;
+  font-family: $font-default;
+  color: $white-primary;
+}
+
+.parisStyles {
+  text-decoration: none;
+  color: $white-primary;
+  font-size: .90rem;
+}
+
+.jumboStyles {
+  text-decoration: none;
+  color: $white-primary;
+  font-size: .90rem;
+}
+
+.santaIsabelStyles {
+  text-decoration: none;
+  color: $white-primary;
+  font-size: .90rem;
+}
+
+.itemAccordion {
+  color: $white-primary;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  &>.arrowUp {
+    display: none;
+  }
+  &>dialog{
+    display: none;
+  }
+  &:hover {
+    &>.arrowDown {
+      display: none;
+    }
+    &>.arrowUp {
+      display: inline;
+    }
+    &>dialog{
+      background-color: transparent;
+     
+      display: inline;
+      border-radius: 5px;
+      border-width: 20px;
+      border-color: transparent;
+      position: absolute;
+      z-index: 2;
+      &:hover{
+      display: inline !important;
+      }
+    }
+  }
+}
+.modalContentRoot{
+  background-color: $white-primary;
+  box-shadow: 0px 5px 7px rgba(0,0,0,0.45);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 3;
+  width: max-content;
+  right: -20vw;
+  &>ul{
+    display: flex;
+    gap: 10px;
+    &>li{
+      list-style-type: none;
+      font-size: .80rem;
+      margin: 15px;
+      &>.link{
+        text-decoration: none;
+        color: #000c24;
+        &>svg{
+          margin-right: 10px;
+        }
+        &:hover{
+          opacity: .65;
+          cursor: pointer;
+        }
+      }
+      
+    }
+  }
+}
+.quad{
+  width: 20px;
+  height: 20px;
+  background-color: $white-primary;
+  position: absolute;
+  margin-top: -5px;
+  rotate: 47deg;
+  border-radius: 3px;
+}

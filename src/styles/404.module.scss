@@ -1,0 +1,22 @@
+@import '@/styles/theme.scss';
+.root{
+    background-color: $white-primary;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+}
+.containerLogo{
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+.containerText{
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    &>h1{
+        margin: 0;
+        font-family: $font-default;
+    }
+}
